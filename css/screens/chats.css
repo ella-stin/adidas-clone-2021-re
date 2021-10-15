@@ -1,0 +1,9 @@
+.screen-header__icons span:nth-child(2) {
+  position: relative;
+}
+
+.fa-plus {
+  position: absolute;
+  left: 17px;
+  bottom: 13px;
+}
