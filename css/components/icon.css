@@ -1,14 +1,14 @@
-.find-icons {
+.icon {
   display: flex;
   justify-content: space-between;
 }
 
-.find-icons__icon {
+.icon__icon {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.find-icons__icon span {
+.icon__icon span {
   margin-top: 20px;
 }
