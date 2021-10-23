@@ -6,7 +6,7 @@
 
 .chat-screen .status-bar {
   top: 0;
-  background-color: #abc1d1;
+  background-color: rgba(171, 193, 209, 0.3);
 }
 
 .chat-screen .alt-header {
@@ -24,12 +24,13 @@
 
 .chat__timestamp {
   background-color: rgba(0, 0, 0, 0.2);
-  width: 250px;
-  height: 40px;
+  width: 200px;
+  height: 35px;
   border-radius: 30px;
   color: white;
-  font-size: 20px;
+  font-size: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
+  letter-spacing: 0.7px;
 }

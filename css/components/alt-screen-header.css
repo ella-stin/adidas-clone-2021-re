@@ -5,7 +5,7 @@
   align-items: center;
   position: fixed;
   z-index: 1;
-  background-color: #abc1d1;
+  background-color: rgba(171, 193, 209, 0.8);
 }
 
 .alt-header__title {
