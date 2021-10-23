@@ -39,6 +39,7 @@
 .message-row {
   width: 100%;
   display: flex;
+  margin-bottom: 25px;
 }
 
 .message-row__author {
@@ -65,4 +66,20 @@
 .message-row__text {
   display: flex;
   align-items: flex-end;
+}
+
+.message-row--own {
+  justify-content: flex-end;
+}
+
+.message-row--own .message-row__bubble {
+  background-color: var(--yellow);
+  border-top-right-radius: 0px;
+  border-top-left-radius: 15px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.message-row--own .message-row__text {
+  flex-direction: row-reverse;
 }
