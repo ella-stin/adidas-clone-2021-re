@@ -83,3 +83,67 @@
 .message-row--own .message-row__text {
   flex-direction: row-reverse;
 }
+
+.reply {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  padding: 10px 20px 10px 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.reply .reply__column:nth-child(1) {
+  width: 5%;
+  opacity: 0.5;
+  padding-right: 10px;
+}
+
+.reply .reply__column:nth-child(2) {
+  width: 95%;
+  position: relative;
+}
+
+.reply input {
+  height: 30px;
+  width: 100%;
+  border: var(--main-border);
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 15px;
+}
+
+.reply .reply__column:nth-child(2) > i,
+.reply .reply__column:nth-child(2) button {
+  position: absolute;
+  right: -5px;
+  top: 6px;
+}
+
+.reply .reply__column:nth-child(2) > i {
+  right: 35px;
+  top: 12px;
+  font-size: 20px;
+  opacity: 0.5;
+}
+
+.reply .reply__column:nth-child(2) button {
+  background-color: var(--yellow);
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.reply .reply__column:nth-child(2) button i {
+  font-size: 17px;
+}
+
+.reply__column button:focus,
+.reply__column button:active {
+  outline: none;
+} /* 이게뭐람? */
