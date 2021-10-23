@@ -18,6 +18,10 @@
   color: var(--gray);
 }
 
+.open-chat {
+  z-index: -1;
+}
+
 .open-chat__header {
   display: flex;
   justify-content: space-between;
