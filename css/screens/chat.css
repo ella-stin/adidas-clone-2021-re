@@ -33,4 +33,36 @@
   justify-content: center;
   align-items: center;
   letter-spacing: 0.7px;
+  margin-bottom: 35px;
+}
+
+.message-row {
+  width: 100%;
+  display: flex;
+}
+
+.message-row__author {
+  opacity: 0.8;
+  font-size: 17px;
+  margin-top: 3px;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.message-row__bubble {
+  background-color: white;
+  padding: 7px 12px;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  margin-right: 5px;
+}
+
+.message-row__time {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.message-row__text {
+  display: flex;
+  align-items: flex-end;
 }
