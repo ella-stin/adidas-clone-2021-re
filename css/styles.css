@@ -21,8 +21,9 @@
 
 body {
   color: #2e363e;
+  height: 180vh;
 }
 
 .main-screen {
-  padding: var(--horizontal-space);
+  padding: 120px var(--horizontal-space);
 }
