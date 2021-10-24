@@ -134,12 +134,19 @@
   padding: 10px 30px 10px 10px;
   box-sizing: border-box;
   text-align: center;
+  transition: all 0.2s ease-in-out;
 }
 
 .reply .reply__column:nth-child(1) {
   width: 5%;
   opacity: 0.5;
   padding-right: 10px;
+  transition: all 0.2s linear;
+}
+
+.reply .reply__column:nth-child(1):hover {
+  opacity: 1;
+  cursor: pointer;
 }
 
 .reply .reply__column:nth-child(2) {
@@ -154,6 +161,7 @@
   border-radius: 20px;
   padding: 5px 10px;
   font-size: 15px;
+  transition: all 0.3s ease-in-out;
 }
 
 .reply .reply__column:nth-child(2) > i,
@@ -186,3 +194,25 @@
 .reply__column button:active {
   outline: none;
 } /* 이게뭐람? */
+
+.reply .reply__column:nth-child(1),
+.reply .reply__column .fa-smile-wink,
+.reply button {
+  transition: opacity 0.1s ease-in-out;
+}
+
+.reply:focus-within .reply__column:nth-child(1),
+.reply:focus-within .reply__column .fa-smile-wink,
+.reply:focus-within button {
+  opacity: 0;
+}
+
+.reply:focus-within input {
+  width: 95vw;
+  transform: translateX(-5%) translateY(-80px);
+  box-sizing: border-box;
+}
+
+.reply:focus-within {
+  transform: translateY(80px);
+}
