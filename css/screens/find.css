@@ -74,6 +74,26 @@
   margin-left: 3px;
 }
 
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+
+.open-chat__image:hover i {
+  will-change: transform;
+  animation: heartBeat 1s ease-in-out infinite;
+}
+
 .open-chat__text h4 {
   font-size: 20px;
   font-weight: 600;
