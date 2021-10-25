@@ -1,0 +1,25 @@
+#only-mobile {
+  display: none;
+}
+
+@media screen and (min-width: 550px) {
+  #only-mobile {
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(90, 37, 238);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 38px;
+    font-weight: 600;
+  }
+  body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+}
